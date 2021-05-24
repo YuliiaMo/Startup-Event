@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+body {
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 300;
+    margin: auto 0;
+}
+.zone {
+    /* padding: 30px 50px;
+    margin: 40px 60px; */
+    /* display: inline-block; */
+    color: white;
+    font-size: 24px;
+    /* border-radius: 4px;
+    border: 1px solid rgb(204, 204, 204); */
+}
+
+/* ---Header--- */
+
+.header {
+    background: rgb(106, 176, 251);
+    background-image: linear-gradient(rgba(106, 176, 251, 0.1), rgb(66, 147, 238));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 16px;
+        padding: 0;
+    }
+}
+
+li {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.push {
+    margin-left: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ---Cover--- */
+
+.cover {
+    background-image: linear-gradient( rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1), rgba(106, 176, 251, 0.2), rgba(106, 176, 251, 0.5)) ;
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    padding: 20px;
+    margin-top: 63px;
+}
+
+.cover img {
+    width: 50rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .cover img {
+        width: 30rem;
+        padding: 10px;
+    }
+
+    .cover {
+        height: 25vh;
+    }
+}
+
+/* ---Grid--- */
+.projects-grid {
+    background: rgb(106, 176, 251);
+    background-image: linear-gradient(rgba(106, 176, 251, 0.1), rgb(66, 147, 238));
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: white;
+    padding: 130px;
+    margin: 20px;
+    cursor: pointer;
+    /* color: white;
+    font-size: 24px; */
+    border-radius: 4px;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.box:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+footer {
+    background: rgb(241, 162, 150);
+    background-image: linear-gradient(rgba(241, 162, 150, 0.1), rgb(251, 179, 37))
+}
+
